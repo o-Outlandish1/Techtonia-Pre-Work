@@ -81,3 +81,4 @@ var myAnswerForExercise21 = 'true';
 
 // Exercise 22 What is the value of 2 < 1 < 3
 var myAnswerForExercise22 = 'true';
+ 
