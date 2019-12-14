@@ -1,4 +1,4 @@
-var emptyVariable = ' ';
+var emptyVariable = '';
     myName = 'Robyn';
     dreamDestination = 'Berlin';
     num1 = 3; //value greater than 1 and less than 10
