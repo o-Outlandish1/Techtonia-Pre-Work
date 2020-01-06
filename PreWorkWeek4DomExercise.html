@@ -1,0 +1,96 @@
+<html>
+
+<body>
+   Animals:
+   <ol id="ol1">
+      <li>Frog</li>
+      <li>Dog</li>
+      <li>Bunny</li>
+   </ol>
+
+   <div id="id1">
+      <p>This is the text in div id1</p>
+      <p>Hope you enjoy my HTML</p>
+   </div>
+
+   <p id="id2">Here's some text in a paragraph</p>
+
+   <div class="myClass">
+      I love learning about HTML and JavaScript
+   </div>
+
+   <p class="myClass">
+      Coding is fun
+   </p>
+
+   <button id="button1">Button 1</button>
+   <br /><br />
+   <button id="button2">Button 2</button>
+</body>
+<script type="text/javascript">
+
+
+   // <!-- Exercise 1 -->
+   document.getElementById('id2').innerHTML = 'Here\'s some new text';
+
+   // <!-- Exercise 2 -->
+   const elemId1 = document.getElementById('id1');
+
+   document.getElementById('id1').style.color = 'green';
+
+   // <!-- Exercise 3 -->
+   console.log(document.getElementsByClassName('myClass'));
+
+   // <!-- Exercise 4 -->
+   console.log(document.getElementById('id1').children)
+
+   // <!-- Exercise 5 -->
+   console.log(document.getElementsByTagName('li'))
+
+   // <!-- Exercise 6 -->
+   console.log(document.getElementsByTagName('li').length)
+
+   // <!-- Exercise 7 -->
+   var liNode = document.createElement('li'),
+      textNode = document.createTextNode('Giraffe');
+
+   liNode.appendChild(textNode);
+   document.getElementById('ol1').appendChild(liNode);
+
+   // <!-- Exercise 8 -->
+   const firstButton = document.getElementById('button1');
+
+   firstButton.addEventListener('click', () => {
+      alert('Hi from Tectonica!')
+   });
+
+   // <!-- Exercise 9 -->
+   // Answer: The DOM is an .
+
+   // <!-- Exercise 10 -->
+
+   const
+      elemMyClass = document.querySelectorAll('.myClass');
+
+   for (var addPunc = 0; addPunc < elemMyClass.length; addPunc++) {
+      elemMyClass[addPunc].insertAdjacentText('beforeend', '!');
+   };
+
+
+   // <!-- Exercise 11 -->
+
+   const secondButton = document.getElementById('button2');
+
+   // function randomNum() {
+   //    var result = Math.floor(Math.random() * 100);
+   //    return result;
+   // };
+
+   secondButton.addEventListener('click', () => {
+      let result = Math.floor(Math.random() * 100);
+      alert(result);
+   })
+
+</script>
+
+</html>
